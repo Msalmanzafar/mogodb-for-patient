@@ -31,9 +31,7 @@ app.get('/Details', function(req, res, next) {
 
 app.post('/addpatient', function(req, res, next) {
 
-patientData.create({
-    PName:'jklsjflks'
-})
+patientData.create(req.body)
     .then((data)=>{
         console.log(req.body)
         res.send('success ==>'+ data);
