@@ -3,12 +3,12 @@ var Schema = mongoose.Schema;
 
 
 var PatientInfo = new Schema({
-    pName: String,
-    fatherName: String,
-    age: Number,
-    date: Number,
-    treatment: String,
-    opd: String
+    PName: String,
+    FatherName: String,
+    Age: Number,
+    Date: Number,
+    TREATMENT: String,
+    OPD: String
 })
 
 var patientData = mongoose.model("patients", PatientInfo)
