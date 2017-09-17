@@ -5,7 +5,7 @@ const bodyparser = require('body-parser')
 const patientData = require('./model')
 
 // mongoose.connect('mogodb://localhost/users' )
-mongoose.connect("mongodb://salmanz:2926959@ds131854.mlab.com:31854/pateinttracker",{
+mongoose.connect("mongodb://salmanz:a2926959@ds131854.mlab.com:31854/pateinttracker",{
     useMongoClient : true
 })
 
@@ -31,7 +31,9 @@ app.get('/Details', function(req, res, next) {
 
 app.post('/addpatient', function(req, res, next) {
 
-patientData.create(req.body)
+patientData.create({
+    PName:'jklsjflks'
+})
     .then((data)=>{
         console.log(req.body)
         res.send('success ==>'+ data);
