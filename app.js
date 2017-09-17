@@ -5,7 +5,7 @@ const bodyparser = require('body-parser')
 const patientData = require('./model')
 
 // mongoose.connect('mogodb://localhost/users' )
-mongoose.connect("",{
+mongoose.connect("mongodb://salmanz:2926959@ds131854.mlab.com:31854/pateinttracker",{
     useMongoClient : true
 })
 
@@ -18,7 +18,7 @@ mongoose.Promise = global.Promise
 app.use(bodyparser.json())
 
 app.get('/', function(req, res, next) {
-  console.log('/ path success')
+//   console.log('/ path success')
     res.send('/ pathe success')
 })
 

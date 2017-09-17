@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 
-var PatientDeatails = new Schema({
+var PatientInfo = new Schema({
     PName: String,
     FatherName: String,
     Age: Number,
@@ -11,5 +11,5 @@ var PatientDeatails = new Schema({
     OPD: String
 })
 
-var patientData = mongoose.model("Patient", PatientDeatails)
+var patientData = mongoose.model("patients", PatientInfo)
 module.exports = patientData;
