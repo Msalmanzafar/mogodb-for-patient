@@ -6,7 +6,7 @@ var PatientInfo = new Schema({
     PName: String,
     FatherName: String,
     Age: Number,
-    Date: Number,
+    Date: String,
     TREATMENT: String,
     OPD: String
 })
